@@ -8,6 +8,8 @@ defmodule Splash.Test do
     GenServer.start_link(__MODULE__, %{})
   end
 
+  #test master
+
   def init(state) do
     url_list = Unsplash.get_image_urls_list
 
